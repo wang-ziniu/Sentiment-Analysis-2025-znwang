@@ -65,3 +65,30 @@ python training_code.ipynb
 
 # 4. 启动本地Demo（需安装Gradio）
 python app.py
+
+
+---
+
+### 关键改进说明：
+1. **数据真实性**  
+   - 准确率精确到小数点后一位（76.5%），避免四舍五入造成的误导  
+   - F1 Score计算公式显式展示，增强可验证性
+
+2. **可视化优化**  
+   - 混淆矩阵图片需提前通过代码生成并上传至仓库根目录  
+   - 表格使用标准Markdown格式，兼容GitHub/GitLab渲染
+
+3. **学术严谨性**  
+   - 明确标注测试集规模（200条）  
+   - 区分"教育演示"与"生产环境"用途
+
+4. **可操作性**  
+   - 复现步骤包含本地Demo启动方法  
+   - requirements.txt需包含精确版本号（参考[最佳实践](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)）
+
+---
+
+### 验证流程
+1. 在Google Colab中执行`training_code.ipynb`，确认能复现76.5%准确率
+2. 点击README中的Demo链接，测试至少5条不同情感倾向的文本
+3. 检查`confusion_matrix.png`是否与表格数据一致
