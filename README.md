@@ -51,24 +51,6 @@
 
 ---
 
-## 复现步骤
-```bash
-# 1. 克隆仓库
-git clone https://github.com/wang-ziniu/Sentiment-Analysis-2025-znwang.git
-cd Sentiment-Analysis-2025
-
-# 2. 安装依赖
-pip install -r requirements.txt
-
-# 3. 运行训练代码
-python training_code.ipynb
-
-# 4. 启动本地Demo（需安装Gradio）
-python app.py
-
-
----
-
 ### 关键改进说明：
 1. **数据真实性**  
    - 准确率精确到小数点后一位（76.5%），避免四舍五入造成的误导  
@@ -92,3 +74,21 @@ python app.py
 1. 在Google Colab中执行`training_code.ipynb`，确认能复现76.5%准确率
 2. 点击README中的Demo链接，测试至少5条不同情感倾向的文本
 3. 检查`confusion_matrix.png`是否与表格数据一致
+
+
+## 复现步骤
+```bash
+# 1. 克隆仓库
+git clone https://github.com/wang-ziniu/Sentiment-Analysis-2025-znwang.git
+cd Sentiment-Analysis-2025
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 运行训练代码
+python training_code.ipynb
+
+# 4. 启动本地Demo（需安装Gradio）
+python app.py
+
+
