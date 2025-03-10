@@ -11,7 +11,7 @@
 
 ## 结果展示
 - 测试集混淆矩阵:  
-  ![Confusion Matrix](./confusion_matrix.png)  <!-- 直接引用仓库内图片 -->
+  ![Confusion Matrix](./confusion_matrix (1).png)  <!-- 直接引用仓库内图片 -->
   
 - 数值明细:  
   |          | 预测负面 | 预测正面 |  
